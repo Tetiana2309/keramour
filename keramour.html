@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./keramour.css">
+
+    <title>Keramour Hair Studio</title>
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="header">
+
+            <div class="logo">
+                <img src="./images/logo.png" alt="Keramour Hair Studio">
+            </div>
+
+            <div class="button">
+                <a href="#" class="cta-button" data-lang-pl="REZERWACJA ONLINE" data-lang-en="BOOK ONLINE"
+                    data-lang-ua="ЗАПИС ОНЛАЙН">
+                    REZERWACJA ONLINE
+                </a>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#about" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
+                O NAS
+            </a>
+            <a href="#gallery" data-lang-pl="GALERIA" data-lang-en="GALLERY" data-lang-ua="ГАЛЕРЕЯ">
+                GALERIA
+            </a>
+            <a href="#price" data-lang-pl="CENA" data-lang-en="PRICE" data-lang-ua="ЦІНИ">
+                CENA
+            </a>
+            <div class="language-switcher">
+                <a href="#" class="lang-btn" data-lang-switch="pl">PL</a>
+                <span class="line"></span>
+                <a href="#" class="lang-btn" data-lang-switch="en">EN</a>
+                <span class="line"></span>
+                <a href="#" class="lang-btn" data-lang-switch="ua">UA</a>
+            </div>
+        </nav>
+
+
+
+        <h1 class="title-one" data-lang-pl="KERAMOUR" data-lang-en="KERAMOUR" data-lang-ua="KERAMOUR">KERAMOUR</h1>
+
+    </div>
+
+    <script>
+        // scripts.js
+
+        // Функция переключения языка
+        function switchLanguage(lang) {
+            // Получаем все элементы с атрибутами data-lang-*
+            const elements = document.querySelectorAll('[data-lang-pl]');
+            elements.forEach((el) => {
+                if (lang === 'pl') {
+                    el.textContent = el.dataset.langPl;
+                } else if (lang === 'en') {
+                    el.textContent = el.dataset.langEn;
+                } else if (lang === 'ua') {
+                    el.textContent = el.dataset.langUa;
+                }
+            });
+
+            // Сохраняем выбранный язык в localStorage
+            localStorage.setItem('lang', lang);
+        }
+
+        // Добавляем слушатели на переключатели языка
+        document.querySelectorAll('.lang-btn').forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault(); // Предотвращаем переход по ссылке
+                const lang = btn.dataset.langSwitch; // Получаем язык из data-lang-switch
+                switchLanguage(lang); // Переключаем язык
+            });
+        });
+
+        // Устанавливаем сохранённый язык при загрузке страницы
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('lang') || 'pl'; // Польский язык по умолчанию
+            switchLanguage(savedLang);
+        });
+
+
+
+    </script>
+</body>
+
+</html>
