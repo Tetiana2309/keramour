@@ -19,6 +19,7 @@ body {
 }
 
 
+/*---------------ГОЛОВНИЙ БЛОК------------*/
 
 .main-container {
     position: relative;
@@ -153,7 +154,168 @@ body {
 .language-switcher .lang-btn:hover,
 .language-switcher .lang-btn:focus {
     color: var(--4);
-    /* Розовый цвет */
     outline: none;
-    /* Убираем стандартный outline */
+
+}
+
+
+/*---------------ДРУГИЙ БЛОК ПРО НАС------------*/
+.section-two {
+    margin-top: 160px;
+}
+
+.second-title {
+    text-align: center;
+}
+
+.title-second-one {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--3);
+    padding-left: 100px;
+    display: flex;
+    text-align: left;
+}
+
+
+.title-second-two {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--3);
+    padding-left: 200px;
+    display: flex;
+    text-align: left;
+
+}
+
+
+.title-second-three {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--3);
+    padding-left: 405px;
+    display: flex;
+    text-align: left;
+}
+
+.second-title .title-second-two {
+    margin-top: -80px;
+
+}
+
+.second-title .title-second-three {
+    margin-top: -80px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    align-items: center;
+}
+
+.foto-img {
+    width: 428px;
+    height: 570px;
+}
+
+.name-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+
+    /* line-height: 58px; */
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--3);
+}
+
+.subtitle {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 28px;
+
+    /* line-height: 34px; */
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: justify;
+    color: var(--3);
+    width: 540px;
+    padding-top: 22px;
+}
+
+.about-text {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 22px;
+
+    /* line-height: 26px; */
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: justify;
+    color: var(--3);
+    width: 540px;
+    padding-top: 28px;
+}
+
+.button-content {
+    display: flex;
+    padding-top: 100px;
+
+
+
+}
+
+.cta-button-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--4);
+    padding: 14px 46px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--3);
+    width: 450px;
+
+    transition: background-color 0.3s ease;
+
+
+
+}
+
+.cta-button-two:hover {
+    background-color: var(--3);
+    color: var(--4);
+}
+
+.therd-title {
+    display: flex;
+    justify-content: center;
+    margin-top: -540px;
+    pointer-events: none;
+}
+
+.therd-title-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 420px;
+
+    /* line-height: 504px; */
+    line-height: 120%;
+    text-transform: uppercase;
+    color: rgba(222, 221, 221, 0.12);
 }
