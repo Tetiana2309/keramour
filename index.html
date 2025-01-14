@@ -2,170 +2,1045 @@
 <html lang="pl">
 
 <head>
+    <!-- Основная информация -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keramour Hair Studio - профессиональный уход за вашими волосами.">
+    <title>Keramour Hair Studio</title>
 
+    <!-- Подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./keramour.css">
+    <!-- Подключение кастомных шрифтов -->
+    <style>
+        @font-face {
+            font-family: 'Impact';
+            src: url('./fonts/impact.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 
-    <title>Keramour Hair Studio</title>
+
+
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="./keramour.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
 
 </head>
 
-<body>
+<body class="preloader-active">
+    <div class="preloader-5-wrapper" id="preloader">
+        <div class="preloader-5"></div>
+    </div>
 
-    <!-------------------------ГОЛОВНИЙ БЛОК-------------------->
 
-    <div class="main-container">
+    <div data-scroll-container>
 
-        <div class="header">
+        <!-------------------------ГОЛОВНИЙ БЛОК-------------------->
 
-            <div class="logo">
-                <img src="./images/logo.png" alt="Keramour Hair Studio">
+
+        <div class="main-container container">
+
+            <div class="header">
+
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Keramour Hair Studio" class="no-animation">
+                </div>
+
+                <div class="button">
+                    <a href="#form-section" class="cta-button" data-lang-pl="REZERWACJA ONLINE"
+                        data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
+                        REZERWACJA ONLINE
+                    </a>
+                </div>
             </div>
 
-            <div class="button">
-                <a href="#" class="cta-button" data-lang-pl="REZERWACJA ONLINE" data-lang-en="BOOK ONLINE"
-                    data-lang-ua="ЗАПИС ОНЛАЙН">
+            <nav class="menu">
+                <a href="#about" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
+                    O NAS
+                </a>
+                <a href="#gallery" data-lang-pl="GALERIA" data-lang-en="GALLERY" data-lang-ua="ГАЛЕРЕЯ">
+                    GALERIA
+                </a>
+                <a href="#price" data-lang-pl="CENA" data-lang-en="PRICE" data-lang-ua="ЦІНИ">
+                    CENA
+                </a>
+                <div class="language-switcher">
+                    <a href="#" class="lang-btn" data-lang-switch="pl">PL</a>
+                    <span class="line"></span>
+                    <a href="#" class="lang-btn" data-lang-switch="en">EN</a>
+                    <span class="line"></span>
+                    <a href="#" class="lang-btn" data-lang-switch="ua">UA</a>
+                </div>
+            </nav>
+
+            <h1 class="title-one">
+                <span id="typed-text"></span>
+                <span class="cursor"></span>
+            </h1>
+
+        </div>
+
+        <!-------------------------ДРУГИЙ БЛОК ПРО НАС-------------------->
+        <div class="section-two  container" id="about" data-scroll-section>
+            <div class="second-title">
+                <h2 class="title-second-one" data-lang-pl="TWOJE WŁOSY" data-lang-en="YOUR HAIR"
+                    data-lang-ua="ВАШЕ ВОЛОССЯ">
+                    TWOJE WŁOSY
+                </h2>
+                <h2 class="title-second-two" data-lang-pl="SĄ W DOBRYCH RĘKACH" data-lang-en="IS IN GOOD HANDS"
+                    data-lang-ua="У НАДІЙНИХ РУКАХ">
+                    SĄ W DOBRYCH RĘKACH
+                </h2>
+                <h2 class="title-second-three" data-lang-pl="NASZYCH SPECJALISTÓW" data-lang-en="OF OUR SPECIALISTS"
+                    data-lang-ua="НАШИХ СПЕЦІАЛІСТІВ">
+                    NASZYCH SPECJALISTÓW
+                </h2>
+            </div>
+
+            <div class="content">
+                <div class="foto">
+                    <img src="./images/foto.png" alt="foto" class="foto-img">
+                </div>
+                <div class="text">
+                    <h3 class="name-text" data-lang-pl="ANASTAZJA" data-lang-en="ANASTAZJA" data-lang-ua="АНАСТАСІЯ">
+                        ANASTAZJA</h3>
+                    <p class="subtitle" data-lang-pl="JEST SPECJALISTĄ REKONSTRUKCJI ODBUDOWY WŁOSÓW" data-lang-en=" IS A
+                    SPECIALIST IN HAIR RECONSTRUCTION AND RESTORATION"
+                        data-lang-ua="СПЕЦІАЛІСТ З РЕКОНСТРУКЦІЇ ТА ВІДНОВЛЕННЯ ВОЛОССЯ">JEST SPECJALISTĄ
+                        REKONSTRUKCJI
+                        ODBUDOWY WŁOSÓW
+                    </p>
+                    <p class="about-text"
+                        data-lang-pl="Od ponad 6 lat tworzę piękno i dodaję pewności siebie. Moje wykształcenie medyczne i doświadczenie w kosmetologii pomagają dbać o zdrowie włosów. Jestem profesjonalistką w rekonstrukcji włosów i tworzę idealne rezultaty!"
+                        data-lang-en="For over 6 years, I have been creating beauty and adding confidence. My medical education and experience in cosmetology help me take care of hair health. I am a professional in hair reconstruction and I create perfect results!"
+                        data-lang-ua="Понад 6 років я створюю красу і додаю впевненості. Моя медична освіта та досвід у косметології допомагають піклуватися про здоров'я волосся. Я професіонал у реконструкції волосся і створюю ідеальні результати!">
+                        Od ponad 6 lat tworzę piękno i dodaję pewności siebie. Moje wykształcenie medyczne i
+                        doświadczenie w
+                        kosmetologii pomagają dbać o zdrowie włosów. Jestem profesjonalistką w rekonstrukcji
+                        włosów
+                        i
+                        tworzę
+                        idealne rezultaty!
+                    </p>
+                    <div class="button-content">
+                        <a href="#form-section" class="cta-button-two" data-lang-pl="REZERWACJA ONLINE"
+                            data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
+                            REZERWACJA ONLINE
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="therd-title">
+                <h2 class="therd-title-text" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
+                    O NAS
+                </h2>
+            </div>
+        </div>
+
+
+
+        <!-------------------------ТРЕТІЙ БЛОК ГАЛЕРЕЯ-------------------->
+
+        <div class="section-three  container" id="gallery" data-scroll-section>
+            <h2 class="title-second-four" data-lang-pl="Zobacz efekty naszej pracy"
+                data-lang-en="See the results of our work" data-lang-ua="Результати нашої роботи">
+                Zobacz efekty naszej pracy
+            </h2>
+
+            <div class="img-video">
+                <div class="hair-img">
+                    <img src="./images/img1.png" alt="foto" class="foto-img-one">
+                    <img src="./images/img1-.png" alt="foto" class="foto-img-two">
+                </div>
+
+                <div class="hair-video">
+                    <video autoplay loop muted>
+                        <source src="./video/video_1.MP4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
+
+            <div class="img-video-two">
+                <div class="hair-video-two">
+                    <video autoplay loop muted>
+                        <source src="./video/video_2.MP4" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="hair-img">
+                    <img src="./images/img2.png" alt="foto" class="foto-img-three">
+                    <img src="./images/img2-.png" alt="foto" class="foto-img-four">
+                </div>
+
+
+            </div>
+            <div class="four-title">
+                <h2 class="four-title-text" data-lang-pl="GALERIA" data-lang-en="GALERIA" data-lang-ua="ГАЛЕРЕЯ">
+                    GALERIA
+                </h2>
+            </div>
+            <div class="img-video-three">
+                <div class="hair-img-three">
+                    <img src="./images/img3.png" alt="foto" class="foto-img-one">
+                    <img src="./images/img3-.png" alt="foto" class="foto-img-two">
+                </div>
+
+                <div class="hair-video-three">
+                    <video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./video/video_3.MP4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+            <div class="img-video-four">
+                <div class="hair-img-four">
+                    <img src="./images/img4.png" alt="foto" class="foto-img-one">
+                </div>
+                <div class="hair-video-four">
+                    <div class="hair-video-four-">
+                        <video autoplay loop muted>
+                            <source src="./video/video_4.MP4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+                    <div class="hair-video-four-">
+                        <video autoplay loop muted>
+                            <source src="./video/video_5.MP4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="button-content-three">
+                <a href="#form-section" class="cta-button-three" data-lang-pl="REZERWACJA ONLINE"
+                    data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
                     REZERWACJA ONLINE
                 </a>
             </div>
+
         </div>
 
-        <nav class="menu">
-            <a href="#about" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
-                O NAS
-            </a>
-            <a href="#gallery" data-lang-pl="GALERIA" data-lang-en="GALLERY" data-lang-ua="ГАЛЕРЕЯ">
-                GALERIA
-            </a>
-            <a href="#price" data-lang-pl="CENA" data-lang-en="PRICE" data-lang-ua="ЦІНИ">
-                CENA
-            </a>
-            <div class="language-switcher">
-                <a href="#" class="lang-btn" data-lang-switch="pl">PL</a>
-                <span class="line"></span>
-                <a href="#" class="lang-btn" data-lang-switch="en">EN</a>
-                <span class="line"></span>
-                <a href="#" class="lang-btn" data-lang-switch="ua">UA</a>
+        <!-------------------------ЧЕТВЕРТИЙ БЛОК ЦІНА-------------------->
+        <div class="section-four  container " id="price" data-scroll-section>
+            <div class="four-title-">
+                <h2 class="title-four-one" data-lang-pl="PIĘKNO DOSTĘPNE" data-lang-en="BEAUTY AVAILABLE"
+                    data-lang-ua="КРАСА ДОСТУПНА">
+                    PIĘKNO DOSTĘPNE
+                </h2>
+                <h2 class="title-four-two" data-lang-pl="DLA KAŻDEGO" data-lang-en="TO EVERYONE"
+                    data-lang-ua="ДЛЯ КОЖНОГО">
+                    DLA KAŻDEGO
+                </h2>
             </div>
-        </nav>
+            <div class="keratin">
+                <!-- Левая часть с изображением и описанием -->
+                <div class="image-keratin">
+                    <img src="./images/img5.png" alt="Hair Image" class="keratin-image">
+                    <p class="keratin-text"
+                        data-lang-pl="WYGŁADZA, PRZYWRACA STRUKTURĘ I DODAJE BLASKU WŁOSOM, ELIMINUJĄC ICH PUSZENIE SIĘ."
+                        data-lang-en="SMOOTHES, RESTORES STRUCTURE AND ADDS SHINE TO HAIR, ELIMINATING FRIZZ."
+                        data-lang-ua="РОЗГЛАДЖУЄ, ВІДНОВЛЮЄ СТРУКТУРУ І НАДАЄ БЛИСК ВОЛОССЮ, УСУВАЮЧИ ПУХНАСТІСТЬ.">
+                        WYGŁADZA, PRZYWRACA STRUKTURĘ I DODAJE BLASKU WŁOSOM, ELIMINUJĄC ICH PUSZENIE SIĘ.
+                    </p>
+                </div>
 
-        <h1 class="title-one" data-lang-pl="KERAMOUR" data-lang-en="KERAMOUR" data-lang-ua="KERAMOUR">KERAMOUR</h1>
+                <!-- Правая часть с ценами и кнопкой -->
+                <div class="pricing-section">
+                    <h2 class="title-pricing" data-lang-pl="KERATYNOWE PROSTOWANIE WŁOSÓW"
+                        data-lang-en="KERATIN HAIR STRAIGHTENING" data-lang-ua="КЕРАТИНОВЕ ВИПРЯМЛЕННЯ ВОЛОССЯ">
+                        KERATYNOWE PROSTOWANIE WŁOSÓW
+                    </h2>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service" data-lang-pl="DO RAMION" data-lang-en="TO SHOULDERS"
+                                data-lang-ua="ДО ПЛЕЧЕЙ">DO RAMION</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="...................................................................."
+                                data-lang-ua="............................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="250 ZŁ" data-lang-en="250 ZŁ" data-lang-ua="250 ЗЛ">250
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO ŁOPATEK" data-lang-en="TO SHOULDER BLADES"
+                                data-lang-ua="ДО ЛОПАТОК">DO ŁOPATEK</span>
+                            <span class="dots"
+                                data-lang-pl="..........................................................................."
+                                data-lang-en="..................................................."
+                                data-lang-ua="........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="300 ZŁ" data-lang-en="300 ZŁ" data-lang-ua="300 ЗЛ">300
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="ZA ŁOPATKI" data-lang-en="BEYOND SHOULDER BLADES"
+                                data-lang-ua="ЗА ЛОПАТКИ">ZA
+                                ŁOPATKI</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="......................................"
+                                data-lang-ua="..........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="350 ZŁ" data-lang-en="350 ZŁ" data-lang-ua="350 ЗЛ">350
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO TALII" data-lang-en="TO WAIST"
+                                data-lang-ua="ДО ТАЛІЇ">DO
+                                TALII</span>
+                            <span class="dots"
+                                data-lang-pl="......................................................................................"
+                                data-lang-en="...................................................................................."
+                                data-lang-ua=".....................................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="400 ZŁ" data-lang-en="400 ZŁ" data-lang-ua="400 ЗЛ">400
+                                ZŁ</span>
+                        </li>
+                    </ul>
 
-    </div>
-
-    <!-------------------------ДРУГИЙ БЛОК ПРО НАС-------------------->
-    <div class="section-two">
-        <div class="second-title">
-            <h2 class="title-second-one" data-lang-pl="TWOJE WŁOSY" data-lang-en="YOUR HAIR"
-                data-lang-ua="ВАШЕ ВОЛОССЯ">
-                TWOJE WŁOSY
-            </h2>
-            <h2 class="title-second-two" data-lang-pl="SĄ W DOBRYCH RĘKACH" data-lang-en="IS IN GOOD HANDS"
-                data-lang-ua="У НАДІЙНИХ РУКАХ">
-                SĄ W DOBRYCH RĘKACH
-            </h2>
-            <h2 class="title-second-three" data-lang-pl="NASZYCH SPECJALISTÓW" data-lang-en="OF OUR SPECIALISTS"
-                data-lang-ua="НАШИХ СПЕЦІАЛІСТІВ">
-                NASZYCH SPECJALISTÓW
-            </h2>
-        </div>
-
-        <div class="content">
-            <div class="foto">
-                <img src="./images/foto.png" alt="foto" class="foto-img">
-            </div>
-            <div class="text">
-                <h3 class="name-text" data-lang-pl="ANASTAZJA" data-lang-en="ANASTAZJA" data-lang-ua="АНАСТАСІЯ">
-                    ANASTAZJA</h3>
-                <p class="subtitle" data-lang-pl="JEST SPECJALISTĄ REKONSTRUKCJI ODBUDOWY WŁOSÓW" data-lang-en=" IS A
-                    SPECIALIST IN HAIR RECONSTRUCTION AND RESTORATION"
-                    data-lang-ua="СПЕЦІАЛІСТ З РЕКОНСТРУКЦІЇ ТА ВІДНОВЛЕННЯ ВОЛОССЯ">JEST SPECJALISTĄ REKONSTRUKCJI
-                    ODBUDOWY WŁOSÓW
-                </p>
-                <p class="about-text"
-                    data-lang-pl="Od ponad 6 lat tworzę piękno i dodaję pewności siebie. Moje wykształcenie medyczne i doświadczenie w kosmetologii pomagają dbać o zdrowie włosów. Jestem profesjonalistką w rekonstrukcji włosów i tworzę idealne rezultaty!"
-                    data-lang-en="For over 6 years, I have been creating beauty and adding confidence. My medical education and experience in cosmetology help me take care of hair health. I am a professional in hair reconstruction and I create perfect results!"
-                    data-lang-ua="Понад 6 років я створюю красу і додаю впевненості. Моя медична освіта та досвід у косметології допомагають піклуватися про здоров'я волосся. Я професіонал у реконструкції волосся і створюю ідеальні результати!">
-                    Od ponad 6 lat tworzę piękno i dodaję pewności siebie. Moje wykształcenie medyczne i doświadczenie w
-                    kosmetologii pomagają dbać o zdrowie włosów. Jestem profesjonalistką w rekonstrukcji włosów i tworzę
-                    idealne rezultaty!
-                </p>
-                <div class="button-content">
-                    <a href="#" class="cta-button-two" data-lang-pl="REZERWACJA ONLINE" data-lang-en="BOOK ONLINE"
-                        data-lang-ua="ЗАПИС ОНЛАЙН">
+                    <a href="#form-section" class="reserve-button" data-lang-pl="REZERWACJA ONLINE"
+                        data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
                         REZERWACJA ONLINE
+                    </a>
+                </div>
+            </div>
+            <div class="botoks">
+                <!-- Левая часть с изображением и описанием -->
+                <div class="image-keratin">
+                    <img src="./images/img6.png" alt="Hair Image" class="keratin-image">
+                    <p class="keratin-text"
+                        data-lang-pl="ODŻYWIA I WZMACNIA WŁOSY OD WEWNĄTRZ, PRZYWRACAJĄC IM MIĘKKOŚĆ, GĘSTOŚĆ I ZDROWIE."
+                        data-lang-en="NOURISHES AND STRENGTHENS HAIR FROM WITHIN, RESTORING SOFTNESS, DENSITY AND HEALTH."
+                        data-lang-ua="ЖИВИТЬ І ЗМІЦНЮЄ ВОЛОССЯ З СЕРЕДИНИ, ПОВЕРТАЮЧИ ЙОМУ М'ЯКІСТЬ, ГУСТОТУ І ЗДОРОВ'Я.">
+                        ODŻYWIA I WZMACNIA WŁOSY OD WEWNĄTRZ, PRZYWRACAJĄC IM MIĘKKOŚĆ, GĘSTOŚĆ I ZDROWIE.
+                    </p>
+                </div>
+
+                <!-- Правая часть с ценами и кнопкой -->
+                <div class="pricing-section">
+                    <h2 class="title-pricing" data-lang-pl="Botoks do włosów" data-lang-en="BOTOX FOR HAIR"
+                        data-lang-ua="БОТОКС ДЛЯ ВОЛОССЯ">
+                        Botoks do włosów
+                    </h2>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service" data-lang-pl="DO RAMION" data-lang-en="TO SHOULDERS"
+                                data-lang-ua="ДО ПЛЕЧЕЙ">DO RAMION</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="...................................................................."
+                                data-lang-ua="............................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="250 ZŁ" data-lang-en="250 ZŁ" data-lang-ua="250 ЗЛ">250
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO ŁOPATEK" data-lang-en="TO SHOULDER BLADES"
+                                data-lang-ua="ДО ЛОПАТОК">DO ŁOPATEK</span>
+                            <span class="dots"
+                                data-lang-pl="..........................................................................."
+                                data-lang-en="..................................................."
+                                data-lang-ua="........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="300 ZŁ" data-lang-en="300 ZŁ" data-lang-ua="300 ЗЛ">300
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="ZA ŁOPATKI" data-lang-en="BEYOND SHOULDER BLADES"
+                                data-lang-ua="ЗА ЛОПАТКИ">ZA
+                                ŁOPATKI</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="......................................"
+                                data-lang-ua="..........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="350 ZŁ" data-lang-en="350 ZŁ" data-lang-ua="350 ЗЛ">350
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO TALII" data-lang-en="TO WAIST"
+                                data-lang-ua="ДО ТАЛІЇ">DO
+                                TALII</span>
+                            <span class="dots"
+                                data-lang-pl="......................................................................................"
+                                data-lang-en="...................................................................................."
+                                data-lang-ua=".....................................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="400 ZŁ" data-lang-en="400 ZŁ" data-lang-ua="400 ЗЛ">400
+                                ZŁ</span>
+                        </li>
+                    </ul>
+
+                    <a href="#form-section" class="reserve-button" data-lang-pl="REZERWACJA ONLINE"
+                        data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
+                        REZERWACJA ONLINE
+                    </a>
+                </div>
+            </div>
+            <div class="five-title">
+                <h2 class="five-title-text" data-lang-pl="CENA" data-lang-en="PRICE" data-lang-ua="ЦІНА">
+                    CENA
+                </h2>
+            </div>
+
+            <div class="nanoplast">
+                <!-- Левая часть с изображением и описанием -->
+                <div class="image-keratin">
+                    <img src="./images/img7.png" alt="Hair Image" class="keratin-image">
+                    <p class="keratin-text"
+                        data-lang-pl="ZAPEWNIA GŁĘBOKIE PROSTOWANIE, POZOSTAWIAJĄC DŁUGOTRWAŁY EFEKT GŁADKICH, LŚNIĄCYCH I JEDWABISTYCH WŁOSÓW"
+                        data-lang-en="PROVIDES DEEP STRAIGHTENING, LEAVING A LONG-LASTING EFFECT OF SMOOTH, SHINY AND SILKY HAIR"
+                        data-lang-ua="ЗАБЕЗПЕЧУЄ ГЛИБОКЕ ВИПРЯМЛЕННЯ, ЗАЛИШАЮЧИ ТРИВАЛИЙ ЕФЕКТ ГЛАДКОГО, БЛИСКУЧОГО ТА ШОВКОВИСТОГО ВОЛОССЯ">
+                        ZAPEWNIA GŁĘBOKIE PROSTOWANIE, POZOSTAWIAJĄC DŁUGOTRWAŁY EFEKT GŁADKICH, LŚNIĄCYCH I
+                        JEDWABISTYCH
+                        WŁOSÓW
+                    </p>
+                </div>
+
+                <!-- Правая часть с ценами и кнопкой -->
+                <div class="pricing-section">
+                    <h2 class="title-pricing" data-lang-pl="NANOPLASTIA" data-lang-en="NANOPLASTIA"
+                        data-lang-ua="НАНОПЛАСТИКА">
+                        NANOPLASTIA
+                    </h2>
+                    <ul class="price-list">
+                        <li>
+                            <span class="service" data-lang-pl="DO RAMION" data-lang-en="TO SHOULDERS"
+                                data-lang-ua="ДО ПЛЕЧЕЙ">DO RAMION</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="...................................................................."
+                                data-lang-ua="............................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="350 ZŁ" data-lang-en="350 ZŁ" data-lang-ua="350 ЗЛ">350
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO ŁOPATEK" data-lang-en="TO SHOULDER BLADES"
+                                data-lang-ua="ДО ЛОПАТОК">DO ŁOPATEK</span>
+                            <span class="dots"
+                                data-lang-pl="..........................................................................."
+                                data-lang-en="..................................................."
+                                data-lang-ua="........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="450 ZŁ" data-lang-en="450 ZŁ" data-lang-ua="450 ЗЛ">450
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="ZA ŁOPATKI" data-lang-en="BEYOND SHOULDER BLADES"
+                                data-lang-ua="ЗА ЛОПАТКИ">ZA
+                                ŁOPATKI</span>
+                            <span class="dots"
+                                data-lang-pl=".............................................................................."
+                                data-lang-en="......................................"
+                                data-lang-ua="..........................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="500 ZŁ" data-lang-en="500 ZŁ" data-lang-ua="500 ЗЛ">500
+                                ZŁ</span>
+                        </li>
+                        <li>
+                            <span class="service" data-lang-pl="DO TALII" data-lang-en="TO WAIST"
+                                data-lang-ua="ДО ТАЛІЇ">DO
+                                TALII</span>
+                            <span class="dots"
+                                data-lang-pl="......................................................................................"
+                                data-lang-en="...................................................................................."
+                                data-lang-ua=".....................................................................................">.....................................</span>
+                            <span class="price" data-lang-pl="580 ZŁ" data-lang-en="580 ZŁ" data-lang-ua="580 ЗЛ">580
+                                ZŁ</span>
+                        </li>
+                    </ul>
+
+                    <a href="#form-section" class="reserve-button" data-lang-pl="REZERWACJA ONLINE"
+                        data-lang-en="BOOK ONLINE" data-lang-ua="ЗАПИС ОНЛАЙН">
+                        REZERWACJA ONLINE
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!------------------------- БЛОК ФОРМА ЗАЯВКИ-------------------->
+        <div class="form-container  container " id="form-section">
+
+            <h4 class="title-form" data-lang-ua="Знижка 10% при онлайн-реєстрації"
+                data-lang-pl="10% zniżki przy rejestracji online" data-lang-en="10% discount for online registration">
+                10% zniżki przy rejestracji online</h4>
+            <div class="timer" id="timer"></div>
+
+            <div class="btn-form">
+                <button class="btn-form-" data-type="telegram" data-lang-ua="TELEGRAM" data-lang-pl="TELEGRAM"
+                    data-lang-en="TELEGRAM">TELEGRAM</button>
+                <button class="btn-form-" data-type="instagram" data-lang-ua="INSTAGRAM" data-lang-pl="INSTAGRAM"
+                    data-lang-en="INSTAGRAM">INSTAGRAM</button>
+                <button class="btn-form-" data-type="phone" data-lang-ua="ТЕЛЕФОН" data-lang-pl="TELEFON"
+                    data-lang-en="NUMBER">ТЕЛЕФОН</button>
+                <button class="btn-form-" data-type="email" data-lang-ua="ПОШТА" data-lang-pl="EMAIL"
+                    data-lang-en="EMAIL">EMAIL</button>
+            </div>
+
+            <div class="input-section hidden">
+                <input type="text" id="input-field" placeholder=""
+                    data-lang-ua="ІМ'Я АКАУНТУ В СОЦІАЛЬНИХ МЕРЕЖАХ АБО НОМЕР ТЕЛЕФОНУ"
+                    data-lang-pl="NAZWA KONTA W MEDIACH SPOŁECZNOŚCIOWYCH LUB NUMER TELEFONU"
+                    data-lang-en="SOCIAL MEDIA ACCOUNT NAME OR PHONE NUMBER">
+
+            </div>
+            <p id="message" class="message-text"></p>
+
+            <div class="checkbox-section">
+                <input type="checkbox" id="agree">
+                <label for="agree" data-lang-pl="WYRAŻAM ZGODĘ NA POLITYKĘ PRZETWARZANIA SAMYCH OSOBOWYCH"
+                    data-lang-en="I AGREE TO THE POLICY OF PROCESSING OF PERSONAL INFORMATION"
+                    data-lang-ua="Я ПОГОДЖУЮСЬ З ПОЛІТИКОЮ ОБРОБКИ ПЕРСОНАЛЬНИХ ДАНИХ">
+
+                    WYRAŻAM ZGODĘ NA POLITYKĘ PRZETWARZANIA SAMYCH OSOBOWYCH
+                </label>
+            </div>
+
+            <div class="button-form" id="submit-btn">
+                <a href="#" class="cta-button-three" data-lang-pl="WYŚLIJ FORMULARZ" data-lang-en="BOOK ONLINE"
+                    data-lang-ua="ЗАПИС ОНЛАЙН">
+                    WYŚLIJ FORMULARZ
+                </a>
+            </div>
+
+
+            <h2 class="form-title-text" data-lang-pl="REZERWACJA" data-lang-en="RESERVATION" data-lang-ua="БРОНЮВАННЯ">
+                REZERWACJA
+            </h2>
+
+
+
+
+
+
+
+        </div>
+
+        <!----------------------------БЛОК ФУТЕР------------------------->
+        <div class="footer container ">
+
+            <div class="footer-one">
+                <div class="logo-footer">
+                    <img src="./images/logo.png" alt="Keramour Hair Studio" class="no-animation">
+                </div>
+                <div class="menu-footer">
+                    <a href="#about" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
+                        O NAS
+                    </a>
+                    <a href="#gallery" data-lang-pl="GALERIA" data-lang-en="GALLERY" data-lang-ua="ГАЛЕРЕЯ">
+                        GALERIA
+                    </a>
+                    <a href="#price" data-lang-pl="CENA" data-lang-en="PRICE" data-lang-ua="ЦІНИ">
+                        CENA
+                    </a>
+
+                </div>
+
+                <div class="button-footer">
+                    <a href="https://www.instagram.com/keramour_krakow/" class="button-inst" data-lang-pl="INSTAGRAM"
+                        data-lang-en="INSTAGRAM" data-lang-ua="INSTAGRAM">
+                        INSTAGRAM
                     </a>
                 </div>
 
             </div>
+            <div class="footer-text">
+                <p class="footer_text no-animation">© 2025</p>
+                <p class="footer_text no-animation">KERAMOUR</p>
+                <p class="footer_text no-animation" data-lang-pl="Polityka prywatności" data-lang-en="Privacy Policy"
+                    data-lang-ua="Політика конфіденційності">Polityka prywatności</p>
+            </div>
+
+
         </div>
-        <div class="therd-title">
-            <h2 class="therd-title-text" data-lang-pl="O NAS" data-lang-en="ABOUT US" data-lang-ua="ПРО НАС">
-                O NAS
-            </h2>
-        </div>
-    </div>
-
-
-
-    <!-------------------------ТРЕТІЙ БЛОК ГАЛЕРЕЯ-------------------->
-
-    <div class="section-three">
 
 
     </div>
-
-
-
-
-
 
     <script>
-        // scripts.js
+        // Глобальная переменная для текущего языка
+        let currentLanguage = localStorage.getItem("lang") || "pl"; // Язык по умолчанию
+    </script>
 
-        // Функция переключения языка
-        function switchLanguage(lang) {
-            // Получаем все элементы с атрибутами data-lang-*
-            const elements = document.querySelectorAll('[data-lang-pl]');
-            elements.forEach((el) => {
-                if (lang === 'pl') {
-                    el.textContent = el.dataset.langPl;
-                } else if (lang === 'en') {
-                    el.textContent = el.dataset.langEn;
-                } else if (lang === 'ua') {
-                    el.textContent = el.dataset.langUa;
-                }
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const langButtons = document.querySelectorAll(".lang-btn");
+            let currentLanguage = localStorage.getItem("lang") || "pl"; // Язык по умолчанию: польский
+
+            function switchLanguage(lang) {
+                currentLanguage = lang; // Установить текущий язык
+                localStorage.setItem("lang", lang); // Сохранить выбранный язык в localStorage
+
+                // Обновить класс на body для специфичных стилей
+                document.body.className = "";
+                document.body.classList.add(`lang-${lang}`);
+
+                // Уведомить второй скрипт об изменении языка
+                document.dispatchEvent(new CustomEvent("languageChanged", { detail: { language: lang } }));
+
+                // Активировать текущую кнопку языка
+                langButtons.forEach((btn) => {
+                    btn.classList.toggle("active", btn.getAttribute("data-lang-switch") === lang);
+                });
+            }
+
+            // Обработчики переключения языка
+            langButtons.forEach((btn) => {
+                btn.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const lang = btn.getAttribute("data-lang-switch");
+                    switchLanguage(lang);
+                });
             });
 
-            // Сохраняем выбранный язык в localStorage
-            localStorage.setItem('lang', lang);
+            // Установить язык при загрузке страницы
+            switchLanguage(currentLanguage);
+        });
+
+
+    </script>
+
+    <script>
+        // Плейсхолдеры для разных языков
+        const placeholders = {
+            pl: {
+                telegram: "NAZWA KONTA W TELEGRAM",
+                instagram: "NAZWA KONTA W INSTAGRAM",
+                phone: "NUMER TELEFONU",
+                email: "ADRES E-MAIL",
+                default: "NAZWA KONTA W MEDIACH SPOŁECЗНОŚCIOWYCH LUB NUMER TELEFONU",
+            },
+            en: {
+                telegram: "YOUR TELEGRAM USERNAME",
+                instagram: "YOUR INSTAGRAM USERNAME",
+                phone: "YOUR PHONE NUMBER",
+                email: "YOUR EMAIL ADDRESS",
+                default: "YOUR SOCIAL MEDIA USERNAME OR PHONE NUMBER",
+            },
+            ua: {
+                telegram: "ІМ'Я АКАУНТУ В TELEGRAM",
+                instagram: "ІМ'Я АКАУНТУ В INSTAGRAM",
+                phone: "ВАШ НОМЕР ТЕЛЕФОНУ",
+                email: "ВАША ЕЛЕКТРОННА ПОШТА",
+                default: "ІМ'Я АКАУНТУ В СОЦМЕРЕЖІ АБО НОМЕР ТЕЛЕФОНУ",
+            },
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let currentLanguage = localStorage.getItem("lang") || "pl"; // Язык по умолчанию
+            let currentType = ""; // Тип контакта для обновления плейсхолдера
+
+            // Обновить текст на странице
+            function updateTexts() {
+                document.querySelectorAll("[data-lang-pl], [data-lang-en], [data-lang-ua]").forEach((el) => {
+                    const newText = el.getAttribute(`data-lang-${currentLanguage}`);
+                    if (newText) {
+                        el.textContent = newText;
+                    }
+                });
+            }
+
+            // Обновить плейсхолдеры
+            function updatePlaceholder() {
+                const inputField = document.getElementById("input-field");
+                const languagePlaceholders = placeholders[currentLanguage] || placeholders.pl;
+                if (inputField) {
+                    inputField.placeholder = languagePlaceholders[currentType] || languagePlaceholders.default;
+                }
+            }
+
+            // Слушать событие изменения языка
+            document.addEventListener("languageChanged", (e) => {
+                currentLanguage = e.detail.language;
+                updateTexts();
+                updatePlaceholder();
+            });
+
+            // Инициализация при загрузке страницы
+            updateTexts();
+            updatePlaceholder();
+
+            // Обработчик для выбора типа контакта
+            const buttons = document.querySelectorAll(".btn-form-");
+            buttons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    currentType = button.getAttribute("data-type");
+                    updatePlaceholder();
+                });
+            });
+        });
+
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".btn-form-");
+            const inputSection = document.querySelector(".input-section");
+            const inputField = document.getElementById("input-field");
+
+            buttons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    inputSection.classList.add("visible");
+                    const currentType = button.getAttribute("data-type");
+                    inputField.setAttribute("data-type", currentType); // Устанавливаем тип данных
+                    updatePlaceholder(); // Обновляем плейсхолдер
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const submitButton = document.getElementById("submit-btn");
+            const inputField = document.getElementById("input-field");
+            const checkbox = document.getElementById("agree");
+            const messageContainer = document.getElementById("message");
+
+            const telegramBotToken = "8126952132:AAGgC1mLFyCUS9EW4-jMzCEfV-HZUxA1IO8";
+            const chatId = "-4708778597";
+
+            async function sendMessage() {
+                const userInput = inputField.value.trim();
+                const currentType = inputField.getAttribute("data-type") || "default";
+
+                if (!userInput) {
+                    showMessage("emptyField");
+                    return;
+                }
+
+                if (!checkbox.checked) {
+                    showMessage("noAgreement");
+                    return;
+                }
+
+                const message = `New application!\nContact type: ${currentType.toUpperCase()}\nData: ${userInput}`;
+                try {
+                    const response = await fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ chat_id: chatId, text: message }),
+                    });
+
+                    const result = await response.json();
+                    if (response.ok && result.ok) {
+                        showMessage("success");
+                        inputField.value = "";
+                        checkbox.checked = false;
+                    } else {
+                        showMessage("error");
+                    }
+                } catch {
+                    showMessage("networkError");
+                }
+            }
+
+            submitButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                sendMessage();
+            });
+        });
+
+    </script>
+
+    <script>
+        const messages = {
+            pl: {
+                emptyField: "Proszę wypełnić pole wejściowe!",
+                noAgreement: "Zgódź się na politykę przetwarzania danych osobowych.",
+                success: "Dane zostały pomyślnie wysłane!",
+                error: "Błąd podczas wysyłania danych.",
+                networkError: "Nie udało się połączyć z Telegramem. Sprawdź sieć.",
+            },
+            en: {
+                emptyField: "Please fill out the input field!",
+                noAgreement: "Please agree to the personal data processing policy.",
+                success: "Data successfully sent!",
+                error: "Error while sending data.",
+                networkError: "Failed to connect to Telegram. Check your network.",
+            },
+            ua: {
+                emptyField: "Будь ласка, заповніть поле вводу!",
+                noAgreement: "Погодьтесь з політикою обробки персональних даних.",
+                success: "Дані успішно відправлено!",
+                error: "Помилка при відправці даних.",
+                networkError: "Не вдалося з'єднатися з Telegram. Перевірте мережу.",
+            },
+        };
+
+        function showMessage(key) {
+            const messageContainer = document.getElementById("message");
+            const text = messages[currentLanguage][key] || key;
+            messageContainer.textContent = text;
+            messageContainer.classList.add("visible");
+            setTimeout(() => messageContainer.classList.remove("visible"), 3000);
         }
 
-        // Добавляем слушатели на переключатели языка
-        document.querySelectorAll('.lang-btn').forEach((btn) => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault(); // Предотвращаем переход по ссылке
-                const lang = btn.dataset.langSwitch; // Получаем язык из data-lang-switch
-                switchLanguage(lang); // Переключаем язык
-            });
+    </script>
+
+
+    <!---------------------------СКРИПТ ТАЙМЕРУ------------------>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const timerElement = document.getElementById("timer");
+
+            function calculateTimeRemaining() {
+                const now = new Date();
+                const nextTargetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 10, 0); // Сегодня в 00:10
+
+                // Если текущее время больше 00:10, цель устанавливается на следующий день
+                if (now > nextTargetTime) {
+                    nextTargetTime.setDate(nextTargetTime.getDate() + 1);
+                }
+
+                const difference = nextTargetTime - now; // Разница в миллисекундах
+
+                const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((difference / (1000 * 60)) % 60);
+                const seconds = Math.floor((difference / 1000) % 60);
+
+                return { hours, minutes, seconds };
+            }
+
+            function updateTimerDisplay() {
+                const { hours, minutes, seconds } = calculateTimeRemaining();
+
+                const hoursDisplay = String(hours).padStart(2, "0");
+                const minutesDisplay = String(minutes).padStart(2, "0");
+                const secondsDisplay = String(seconds).padStart(2, "0");
+
+                timerElement.textContent = `${hoursDisplay}:${minutesDisplay}:${secondsDisplay}`;
+            }
+
+            // Обновление таймера каждую секунду
+            setInterval(updateTimerDisplay, 1000);
+
+            // Начальное отображение
+            updateTimerDisplay();
         });
 
-        // Устанавливаем сохранённый язык при загрузке страницы
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('lang') || 'pl'; // Польский язык по умолчанию
-            switchLanguage(savedLang);
-        });
 
 
 
     </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const preloader = document.getElementById('preloader');
+            const typedTextElement = document.getElementById('typed-text');
+            const text = "KERAMOUR"; // Текст для анимации
+            let index = 0;
+
+            // Проверяем, найден ли элемент preloader и typed-text
+            if (!preloader || !typedTextElement) {
+                console.error('Ошибка: Прелоудер или элемент с id="typed-text" не найдены!');
+                return;
+            }
+
+            // Функция набора текста
+            function typeText() {
+                if (index < text.length) {
+                    typedTextElement.textContent += text[index];
+                    index++;
+                    setTimeout(typeText, 150); // Скорость набора текста
+                }
+            }
+
+            // Убираем прелоудер после загрузки страницы
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.classList.add('preloader-hidden');
+                    document.body.classList.remove('preloader-active');
+
+                    setTimeout(() => {
+                        preloader.classList.add('preloader-none');
+                        typeText(); // Запускаем анимацию текста
+                    }, 500); // Задержка после скрытия прелоудера
+                }, 800); // Время показа прелоудера
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Регистрация плагина ScrollTrigger
+            gsap.registerPlugin(ScrollTrigger);
+
+            // Анимация для заголовков
+            const headers = document.querySelectorAll('h2, h3');
+            headers.forEach((header, index) => {
+                gsap.from(header, {
+                    opacity: 0,
+                    y: 50, // Заголовок появляется снизу
+                    scale: 0.8, // Заголовок начинает с меньшего размера
+                    duration: 1.5,
+                    ease: "power4.out",
+                    delay: index * 0.2, // Задержка для каждого заголовка
+                    scrollTrigger: {
+                        trigger: header,
+                        start: "top 80%",
+                        end: "bottom 20%",
+                        scrub: true
+                    }
+                });
+            });
+
+            // Параграфы текста с более плавной анимацией
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach((paragraph, index) => {
+                if (!paragraph.closest('.no-animation')) { // Если параграф не в исключении
+                    gsap.from(paragraph, {
+                        opacity: 0,
+                        y: 30,  // Меньшее смещение, чтобы анимация была плавной
+                        duration: 2, // Увеличиваем продолжительность анимации для плавности
+                        ease: "power2.out", // Более мягкое замедление
+                        delay: index * 0.2, // Задержка для каждого параграфа
+                        scrollTrigger: {
+                            trigger: paragraph,
+                            start: "top 80%",
+                            end: "bottom 20%",
+                            scrub: true
+                        }
+                    });
+                }
+            });
+
+            // Анимация для секции "Цена" с динамичным появлением цен
+            const priceSection = document.querySelector('#price');
+            const priceItems = priceSection.querySelectorAll('.price-list li');
+            priceItems.forEach((item, index) => {
+                gsap.from(item, {
+                    opacity: 0,
+                    scale: 0.8, // Начальное уменьшение
+                    duration: 1.5,
+                    ease: "power4.out",
+                    delay: index * 0.2, // Задержка для каждого элемента
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 80%",
+                        end: "bottom 20%",
+                        scrub: true
+                    }
+                });
+            });
+
+            // Анимация для изображений (сдвиг по оси X)
+            const images = document.querySelectorAll('img');
+            images.forEach((image, index) => {
+                // ИСКЛЮЧАЕМ ЛОГОТИП И СОПРЯЖЕННЫЕ СЕГМЕНТЫ
+                if (!image.closest('.no-animation')) {
+                    gsap.from(image, {
+                        x: -100, // Сдвиг влево
+                        opacity: 1, // Прозрачность остается неизменной
+                        duration: 1.5,
+                        ease: "power3.out",
+                        delay: index * 0.2, // Задержка для каждого изображения
+                        scrollTrigger: {
+                            trigger: image,
+                            start: "top 80%", // Начало анимации, когда картинка входит в область видимости
+                            end: "bottom 20%", // Конец анимации, когда картинка выходит из области видимости
+                            scrub: true // Анимация синхронизируется с прокруткой
+                        }
+                    });
+                }
+            });
+
+            // Анимация для видео (сдвиг по оси Y)
+            const videos = document.querySelectorAll('video');
+            videos.forEach((video, index) => {
+                // ИСКЛЮЧАЕМ ЛОГОТИП И СОПРЯЖЕННЫЕ СЕГМЕНТЫ
+                if (!video.closest('.no-animation')) {
+                    gsap.from(video, {
+                        y: 100, // Сдвиг снизу
+                        opacity: 1, // Прозрачность остается неизменной
+                        duration: 1.5,
+                        ease: "power4.out",
+                        delay: index * 0.3, // Задержка для каждого видео
+                        scrollTrigger: {
+                            trigger: video,
+                            start: "top 80%", // Начало анимации, когда видео входит в область видимости
+                            end: "bottom 20%", // Конец анимации, когда видео выходит из области видимости
+                            scrub: true // Анимация синхронизируется с прокруткой
+                        }
+                    });
+                }
+            });
+        });
+
+
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Получаем все пункты меню
+            const menuLinks = document.querySelectorAll('.menu a, .menu-footer a');
+
+            // Функция для плавной прокрутки
+            function smoothScroll(target) {
+                const startPosition = window.pageYOffset; // Начальная позиция страницы
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset; // Позиция целевой секции
+                const distance = targetPosition - startPosition; // Расстояние, которое нужно пройти
+                const duration = 800; // Длительность анимации в миллисекундах
+                let startTime = null;
+
+                // Функция для анимации прокрутки
+                function animation(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = easeInOut(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(animation); // Продолжаем анимацию
+                    }
+                }
+
+                // Easing функция для плавности прокрутки
+                function easeInOut(t, b, c, d) {
+                    t /= d / 2;
+                    if (t < 1) return (c / 2) * t * t + b;
+                    t--;
+                    return (-c / 2) * (t * (t - 2) - 1) + b;
+                }
+
+                // Запускаем анимацию
+                requestAnimationFrame(animation);
+            }
+
+            // Для каждого пункта меню добавляем обработчик
+            menuLinks.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    event.preventDefault(); // Останавливаем стандартное поведение ссылки
+
+                    // Получаем id секции на основе href
+                    const targetId = link.getAttribute("href").substring(1); // Убираем # из href
+                    const targetElement = document.getElementById(targetId);
+
+                    // Прокручиваем до выбранной секции
+                    if (targetElement) {
+                        smoothScroll(targetElement); // Используем функцию прокрутки
+                    }
+                });
+            });
+        });
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+
 </body>
 
 </html>
