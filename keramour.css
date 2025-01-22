@@ -250,7 +250,7 @@ body.preloader-active {
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 62px;
+    left: 78px;
     top: 280px;
 }
 
@@ -305,6 +305,28 @@ body.preloader-active {
 }
 
 
+/* Заголовки */
+.title-one {
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 320px;
+    line-height: 120%;
+    color: var(--3);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), transform 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+}
+
+.title-one.animate {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+
+
 /*---------------ДРУГИЙ БЛОК ПРО НАС-----------*/
 .section-two {
     margin-top: 180px;
@@ -324,6 +346,9 @@ body.preloader-active {
     padding-left: 100px;
     display: flex;
     text-align: left;
+
+
+
 }
 
 
@@ -338,6 +363,8 @@ body.preloader-active {
     display: flex;
     text-align: left;
 
+
+
 }
 
 
@@ -351,6 +378,9 @@ body.preloader-active {
     padding-left: 405px;
     display: flex;
     text-align: left;
+
+
+
 }
 
 .second-title .title-second-two {
@@ -362,6 +392,9 @@ body.preloader-active {
     margin-top: -90px;
 
 }
+
+
+
 
 .content {
     display: flex;
@@ -528,8 +561,8 @@ body.preloader-active {
 .img-video {
     display: flex;
 
-    justify-content: space-between;
-    gap: 536px;
+    justify-content: center;
+    gap: 236px;
 
 }
 
@@ -560,9 +593,9 @@ body.preloader-active {
 
 .img-video-two {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 536px;
+    gap: 236px;
     padding-top: 40px;
 
 }
@@ -630,9 +663,9 @@ body.preloader-active {
 
 .img-video-three {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 536px;
+    gap: 236px;
     margin-top: -500px;
     position: relative;
     z-index: 1;
@@ -664,9 +697,9 @@ body.preloader-active {
 
 .img-video-four {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 536px;
+    gap: 236px;
 
     position: relative;
     z-index: 1;

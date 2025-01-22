@@ -27,10 +27,11 @@
 
 
 
-
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="./keramour.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -80,9 +81,8 @@
                 </div>
             </nav>
 
-            <h1 class="title-one">
-                <span id="typed-text"></span>
-                <span class="cursor"></span>
+            <h1 class="title-one animate-heading">
+                KERAMOUR
             </h1>
 
         </div>
@@ -156,12 +156,12 @@
             </h2>
 
             <div class="img-video">
-                <div class="hair-img">
+                <div class="hair-img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./images/img1.png" alt="foto" class="foto-img-one">
                     <img src="./images/img1-.png" alt="foto" class="foto-img-two">
                 </div>
 
-                <div class="hair-video">
+                <div class="hair-video" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <video autoplay loop muted>
                         <source src="./video/video_1.MP4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
@@ -170,13 +170,13 @@
             </div>
 
             <div class="img-video-two">
-                <div class="hair-video-two">
+                <div class="hair-video-two" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <video autoplay loop muted>
                         <source src="./video/video_2.MP4" type="video/mp4">
 
                     </video>
                 </div>
-                <div class="hair-img">
+                <div class="hair-img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./images/img2.png" alt="foto" class="foto-img-three">
                     <img src="./images/img2-.png" alt="foto" class="foto-img-four">
                 </div>
@@ -189,12 +189,12 @@
                 </h2>
             </div>
             <div class="img-video-three">
-                <div class="hair-img-three">
+                <div class="hair-img-three" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./images/img3.png" alt="foto" class="foto-img-one">
                     <img src="./images/img3-.png" alt="foto" class="foto-img-two">
                 </div>
 
-                <div class="hair-video-three">
+                <div class="hair-video-three" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <video autoplay loop muted style="width: 100%; height: 100%; object-fit: cover;">
                         <source src="./video/video_3.MP4" type="video/mp4">
 
@@ -202,10 +202,10 @@
                 </div>
             </div>
             <div class="img-video-four">
-                <div class="hair-img-four">
+                <div class="hair-img-four" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="./images/img4.png" alt="foto" class="foto-img-one">
                 </div>
-                <div class="hair-video-four">
+                <div class="hair-video-four" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <div class="hair-video-four-">
                         <video autoplay loop muted>
                             <source src="./video/video_4.MP4" type="video/mp4">
@@ -233,13 +233,13 @@
         </div>
 
         <!-------------------------ЧЕТВЕРТИЙ БЛОК ЦІНА-------------------->
-        <div class="section-four  container " id="price" data-scroll-section>
+        <div class="section-four  container" id="price" data-scroll-section>
             <div class="four-title-">
                 <h2 class="title-four-one" data-lang-pl="PIĘKNO DOSTĘPNE" data-lang-en="BEAUTY AVAILABLE"
                     data-lang-ua="КРАСА ДОСТУПНА">
                     PIĘKNO DOSTĘPNE
                 </h2>
-                <h2 class="title-four-two" data-lang-pl="DLA KAŻDEGO" data-lang-en="TO EVERYONE"
+                <h2 class="title-four-two animate-heading" data-lang-pl="DLA KAŻDEGO" data-lang-en="TO EVERYONE"
                     data-lang-ua="ДЛЯ КОЖНОГО">
                     DLA KAŻDEGO
                 </h2>
@@ -600,8 +600,6 @@
             // Установить язык при загрузке страницы
             switchLanguage(currentLanguage);
         });
-
-
     </script>
 
     <script>
@@ -612,7 +610,7 @@
                 instagram: "NAZWA KONTA W INSTAGRAM",
                 phone: "NUMER TELEFONU",
                 email: "ADRES E-MAIL",
-                default: "NAZWA KONTA W MEDIACH SPOŁECЗНОŚCIOWYCH LUB NUMER TELEFONU",
+                default: "NAZWA KONTA W MEDIACH SPOŁECЗНОŚCИOWYCH LUB NUMER TELEFONU",
             },
             en: {
                 telegram: "YOUR TELEGRAM USERNAME",
@@ -673,8 +671,6 @@
                 });
             });
         });
-
-
     </script>
 
     <script>
@@ -692,7 +688,6 @@
                 });
             });
         });
-
     </script>
 
     <script>
@@ -745,14 +740,13 @@
                 sendMessage();
             });
         });
-
     </script>
 
     <script>
         const messages = {
             pl: {
                 emptyField: "Proszę wypełnić pole wejściowe!",
-                noAgreement: "Zgódź się na politykę przetwarzania danych osobowych.",
+                noAgreement: "Zgódź się на polityку przetwarzania danych osobowych.",
                 success: "Dane zostały pomyślnie wysłane!",
                 error: "Błąd podczas wysyłania danych.",
                 networkError: "Nie udało się połączyć z Telegramem. Sprawdź sieć.",
@@ -780,8 +774,8 @@
             messageContainer.classList.add("visible");
             setTimeout(() => messageContainer.classList.remove("visible"), 3000);
         }
-
     </script>
+
 
 
     <!---------------------------СКРИПТ ТАЙМЕРУ------------------>
@@ -823,50 +817,100 @@
             // Начальное отображение
             updateTimerDisplay();
         });
-
-
-
-
     </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const preloader = document.getElementById('preloader');
-            const typedTextElement = document.getElementById('typed-text');
-            const text = "KERAMOUR"; // Текст для анимации
-            let index = 0;
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloaderWrapper = document.querySelector(".preloader-5-wrapper");
 
-            // Проверяем, найден ли элемент preloader и typed-text
-            if (!preloader || !typedTextElement) {
-                console.error('Ошибка: Прелоудер или элемент с id="typed-text" не найдены!');
-                return;
-            }
+            // Эмулируем процесс загрузки (здесь вы можете вставить реальный процесс)
+            setTimeout(() => {
+                preloaderWrapper.classList.add("preloader-hidden");
 
-            // Функция набора текста
-            function typeText() {
-                if (index < text.length) {
-                    typedTextElement.textContent += text[index];
-                    index++;
-                    setTimeout(typeText, 150); // Скорость набора текста
-                }
-            }
-
-            // Убираем прелоудер после загрузки страницы
-            window.addEventListener('load', () => {
+                // Полное удаление прелоадера из DOM
                 setTimeout(() => {
-                    preloader.classList.add('preloader-hidden');
-                    document.body.classList.remove('preloader-active');
-
-                    setTimeout(() => {
-                        preloader.classList.add('preloader-none');
-                        typeText(); // Запускаем анимацию текста
-                    }, 500); // Задержка после скрытия прелоудера
-                }, 800); // Время показа прелоудера
-            });
+                    preloaderWrapper.classList.add("preloader-none");
+                    document.body.style.overflow = "auto"; // Включаем прокрутку
+                }, 500); // Учитываем время исчезновения (0.5s)
+            }, 1000); // Прелоадер работает 3 секунды
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloaderWrapper = document.querySelector(".preloader-5-wrapper");
+
+            // Эмулируем процесс загрузки (здесь вы можете вставить реальный процесс)
+            setTimeout(() => {
+                preloaderWrapper.classList.add("preloader-hidden");
+
+                // Полное удаление прелоадера из DOM
+                setTimeout(() => {
+                    preloaderWrapper.classList.add("preloader-none");
+                    document.body.style.overflow = "auto"; // Включаем прокрутку
+                }, 500); // Учитываем время исчезновения (0.5s)
+            }, 1000); // Прелоадер работает 3 секунды
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const preloaderWrapper = document.querySelector(".preloader-5-wrapper");
+
+            // Эмулируем процесс загрузки (здесь вы можете вставить реальный процесс)
+            setTimeout(() => {
+                preloaderWrapper.classList.add("preloader-hidden");
+
+                // Полное удаление прелоадера из DOM
+                setTimeout(() => {
+                    preloaderWrapper.classList.add("preloader-none");
+                    document.body.style.overflow = "auto"; // Включаем прокрутку
+                }, 500); // Учитываем время исчезновения (0.5s)
+            }, 1000); // Прелоадер работает 3 секунды
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const titles = document.querySelectorAll(".title-one");
+
+            // Функция запуска анимации после исчезновения прелоудера
+            const startTitleAnimation = () => {
+                titles.forEach((title, index) => {
+                    setTimeout(() => {
+                        title.classList.add("animate");
+                    }, index * 300); // Задержка между заголовками
+                });
+            };
+
+            // Запускаем анимацию после прелоудера
+            setTimeout(startTitleAnimation, 1000); // Время совпадает с прелоудером
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 
     <script>
@@ -874,43 +918,22 @@
             // Регистрация плагина ScrollTrigger
             gsap.registerPlugin(ScrollTrigger);
 
-            // Анимация для заголовков
+            // Анимация для заголовков (появление снизу вверх)
             const headers = document.querySelectorAll('h2, h3');
             headers.forEach((header, index) => {
                 gsap.from(header, {
-                    opacity: 0,
-                    y: 50, // Заголовок появляется снизу
-                    scale: 0.8, // Заголовок начинает с меньшего размера
-                    duration: 1.5,
-                    ease: "power4.out",
-                    delay: index * 0.2, // Задержка для каждого заголовка
+                    opacity: 0,      // Полная прозрачность в начале
+                    y: 80,           // Начальное смещение вниз (чтобы заголовок поднимался вверх)
+                    duration: 3,     // Длительность анимации
+                    ease: "power2.out", // Мягкий замедляющий эффект
+                    delay: index * 0.2, // Небольшая задержка между заголовками
                     scrollTrigger: {
-                        trigger: header,
-                        start: "top 80%",
-                        end: "bottom 20%",
-                        scrub: true
+                        trigger: header, // Элемент, который вызывает анимацию
+                        start: "top 85%", // Анимация начинается, когда заголовок входит в зону видимости
+                        end: "top 60%",   // Анимация завершается, когда заголовок становится ближе к середине
+                        scrub: true       // Синхронизация анимации с прокруткой
                     }
                 });
-            });
-
-            // Параграфы текста с более плавной анимацией
-            const paragraphs = document.querySelectorAll('p');
-            paragraphs.forEach((paragraph, index) => {
-                if (!paragraph.closest('.no-animation')) { // Если параграф не в исключении
-                    gsap.from(paragraph, {
-                        opacity: 0,
-                        y: 30,  // Меньшее смещение, чтобы анимация была плавной
-                        duration: 2, // Увеличиваем продолжительность анимации для плавности
-                        ease: "power2.out", // Более мягкое замедление
-                        delay: index * 0.2, // Задержка для каждого параграфа
-                        scrollTrigger: {
-                            trigger: paragraph,
-                            start: "top 80%",
-                            end: "bottom 20%",
-                            scrub: true
-                        }
-                    });
-                }
             });
 
             // Анимация для секции "Цена" с динамичным появлением цен
@@ -932,51 +955,37 @@
                 });
             });
 
-            // Анимация для изображений (сдвиг по оси X)
-            const images = document.querySelectorAll('img');
-            images.forEach((image, index) => {
-                // ИСКЛЮЧАЕМ ЛОГОТИП И СОПРЯЖЕННЫЕ СЕГМЕНТЫ
-                if (!image.closest('.no-animation')) {
-                    gsap.from(image, {
-                        x: -100, // Сдвиг влево
-                        opacity: 1, // Прозрачность остается неизменной
-                        duration: 1.5,
-                        ease: "power3.out",
-                        delay: index * 0.2, // Задержка для каждого изображения
-                        scrollTrigger: {
-                            trigger: image,
-                            start: "top 80%", // Начало анимации, когда картинка входит в область видимости
-                            end: "bottom 20%", // Конец анимации, когда картинка выходит из области видимости
-                            scrub: true // Анимация синхронизируется с прокруткой
-                        }
-                    });
-                }
-            });
 
-            // Анимация для видео (сдвиг по оси Y)
-            const videos = document.querySelectorAll('video');
-            videos.forEach((video, index) => {
-                // ИСКЛЮЧАЕМ ЛОГОТИП И СОПРЯЖЕННЫЕ СЕГМЕНТЫ
-                if (!video.closest('.no-animation')) {
-                    gsap.from(video, {
-                        y: 100, // Сдвиг снизу
-                        opacity: 1, // Прозрачность остается неизменной
-                        duration: 1.5,
-                        ease: "power4.out",
-                        delay: index * 0.3, // Задержка для каждого видео
+
+            // Анимация для параграфов текста
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach((paragraph, index) => {
+                if (!paragraph.closest('.no-animation')) {
+                    gsap.from(paragraph, {
+                        opacity: 0,
+                        y: 30, // Небольшое смещение вниз
+                        duration: 2.5, // Увеличиваем продолжительность анимации
+                        ease: "power2.inOut", // Более мягкий эффект появления
+                        delay: index * 0.2, // Задержка для плавности
                         scrollTrigger: {
-                            trigger: video,
-                            start: "top 80%", // Начало анимации, когда видео входит в область видимости
-                            end: "bottom 20%", // Конец анимации, когда видео выходит из области видимости
-                            scrub: true // Анимация синхронизируется с прокруткой
+                            trigger: paragraph,
+                            start: "top 85%",
+                            end: "bottom 20%",
+                            scrub: true
                         }
                     });
                 }
             });
         });
-
-
     </script>
+
+
+
+
+
+
+
+
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -1035,10 +1044,20 @@
 
     </script>
 
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
